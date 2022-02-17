@@ -8,18 +8,22 @@
     <a-assets>
       <a-asset-item id="avocado" src="https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/9176d098/1.0/Avocado/glTF/Avocado.gltf"></a-asset-item>
     </a-assets>
-      <a-marker-camera preset='custom' type='pattern' url='https://pugnabh.github.io/pattern-Screenshot.patt'></a-marker-camera>
+      <a-marker-camera preset='custom' type='pattern' url='https://pugnabh.github.io/pattern-Screenshot.patt'>
+              <a-animation attribute="rotation"
+                  dur="2000"
+                  easing="linear"
+                  from="0 0 0"
+                  to="0 360 0"
+                  repeat="indefinite">
+        </a-animation>
+          <a-entity rotation="0 0 25">
+            <a-sphere position="0.5 0 0.5">
+            </a-sphere>
+          </a-entity>
+      </a-marker-camera>
   	<a-marker preset="hiro">
       <a-entity>
-        <a-animation attribute="rotation"
-          dur="2000"
-          easing="linear"
-          from="0 0 0"
-          to="0 360 0"
-          repeat="indefinite"></a-animation>
-          <a-entity rotation="0 0 25">
-            <a-sphere position="2 0 2"></a-sphere>
-          </a-entity>
+
       </a-entity>
   	</a-marker>
   	<a-entity camera></a-entity>
