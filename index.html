@@ -7,6 +7,9 @@
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene stats embedded arjs='trackingMethod: best; debugUIEnabled: false'>
   	<a-marker preset="hiro">
+       <a-box position="0 2 0" rotation="0 45 45" scale="2 4 2">
+   <a-sphere position="1 0 3"></a-sphere>
+ </a-box>
               <a-entity
           position="-1 0 0"
           scale="0.01 0.01 0.01"
@@ -30,7 +33,9 @@
   	</a-marker>
       
       <a-marker-camera  type='pattern' patternUrl='https://github.com/pugnabh/pugnabh.github.io/pattern-Screenshot.patt'>
-        
+         <a-box position="0 2 0" rotation="0 45 45" scale="2 4 2">
+   <a-sphere position="1 0 3"></a-sphere>
+ </a-box>
       <a-entity
           position="-1 0 0"
           scale="0.01 0.01 0.01"
