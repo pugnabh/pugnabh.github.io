@@ -12,6 +12,19 @@
       </a-marker>
       <a-marker preset='custom' url='pattern-Screenshot.patt'> <a-box position='0 0.5 0' material='color: red;'></a-box> </a-marker>
   	<a-marker preset="hiro">
+            <a-entity
+        gltf-model="qvo.gltf"
+        scale="5 5 5"
+        position="50 150 0"
+      >
+                            <a-animation attribute="rotation"
+                  dur="2000"
+                  easing="linear"
+                  from="0 0 0"
+                  to="0 360 0"
+                  repeat="indefinite">
+        </a-animation>
+      </a-entity>
       <a-entity>
 
               <a-animation attribute="rotation"
